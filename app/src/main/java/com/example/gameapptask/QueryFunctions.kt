@@ -82,8 +82,8 @@ class QueryFunctions(private val context: Context) {
         println("Query : $sql")
         cursor = db!!.select(sql)
         if (cursor!!.moveToFirst()) {
-            var mp: MutableMap<String, String> = HashMap()
             while (!cursor!!.isAfterLast) {
+                var mp: MutableMap<String, String> = HashMap()
                 mp["name"] = cursor!!.getString(cursor!!.getColumnIndex("name"))
                 mp["bestplayer"] = cursor!!.getString(cursor!!.getColumnIndex("bestplayer"))
                 mp["colors"] = cursor!!.getString(cursor!!.getColumnIndex("colors"))
