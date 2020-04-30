@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryReport">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Hello "
+                android:layout_margin="10dp"
+                android:id="@+id/hl" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/hl" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Here are the answers selected: "
+                android:textStyle="bold"
+                android:id="@+id/msg1"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/hl" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Who is the best cricketer in the world?"
+                android:textStyle="bold"
+                android:id="@+id/msg2"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/msg1" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Answer "
+                android:layout_margin="10dp"
+                android:layout_below="@+id/msg2"
+                android:id="@+id/txtans" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/txtans1"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/msg2"
+                android:layout_toRightOf="@+id/txtans" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="What are the colors in the national flag?"
+                android:textStyle="bold"
+                android:id="@+id/msg3"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/txtans" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Answer "
+                android:layout_margin="10dp"
+                android:layout_below="@+id/msg3"
+                android:id="@+id/colortxt" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/colorans"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/msg3"
+                android:layout_toRightOf="@+id/colortxt" />
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colortxt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                android:onClick="submit"
+                android:text="Finish " />
+        </RelativeLayout>
+
+        <!--<Button
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auth"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="Next " />-->
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

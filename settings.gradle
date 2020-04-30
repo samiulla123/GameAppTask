@@ -1,0 +1,2 @@
+rootProject.name='GameAppTask'
+include ':app'

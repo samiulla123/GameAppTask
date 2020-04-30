@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GameAppTask</string>
+    <string name="disp_name">Trivia</string>
+    <string name="FirstName">Enter User Name</string>
+</resources>
